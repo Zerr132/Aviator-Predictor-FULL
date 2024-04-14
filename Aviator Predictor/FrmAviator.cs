@@ -16,6 +16,7 @@ namespace Aviator_Hack
         private Random random = new Random();
         public FrmAviator()
         {
+        // fix problem
             InitializeComponent();
         }
         private Color currentColor = Color.Red;

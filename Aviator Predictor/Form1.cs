@@ -12,7 +12,6 @@ namespace Aviator_Hack
 
         private const int WM_NCLBUTTONDOWN = 0xA1;
         private const int HT_CAPTION = 0x2;
-        /*private string connectionString = "Server=your_server;Database=your_database;User Id=your_username;Password=your_password;";*/
         [System.Runtime.InteropServices.DllImport("user32.dll")]
         private static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
         [System.Runtime.InteropServices.DllImport("user32.dll")]
@@ -141,21 +140,7 @@ namespace Aviator_Hack
                 Console.WriteLine($"Hata: {ex.Message}");
             }
         }
-        /*        private bool IsUserAuthenticated(string username, string password)
-       {
-
-           using (SqlConnection connection = new SqlConnection(connectionString))
-           {
-               string query = "SELECT COUNT(1) FROM Users WHERE Username = @Username AND Password = @Password";
-               using (SqlCommand command = new SqlCommand(query, connection))
-               {
-                   command.Parameters.AddWithValue("@Username", username);
-                   command.Parameters.AddWithValue("@Password", password);
-                   connection.Open();
-                   int count = (int)command.ExecuteScalar();
-                   return count > 0;
-               }
-           }
-       }*/
     }
 }
+
+// Remove SQL DATA

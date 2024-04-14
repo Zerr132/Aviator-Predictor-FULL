@@ -1,10 +1,8 @@
 
 <div align="center">
-<!----
+<!--------80 Star FIX Problem----->
 
-80 Star FIX Problem
 
----->
 
 
 # Aviator Predictor
